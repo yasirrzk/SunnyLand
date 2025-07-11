@@ -19,4 +19,13 @@ public class LoadScene : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+    public void restartGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
